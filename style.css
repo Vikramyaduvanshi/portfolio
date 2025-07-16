@@ -54,7 +54,24 @@ body {
     font-weight: 700;
     font-size: 1.5rem;
 }
+.nav-logo img {
+    height: 60px;            /* or whatever size you prefer */
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;      /* Makes it circular */
+    border: 2px solid #fff;  /* Optional: white border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+.nav-logo img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
 
+.nav-logo {
+   
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
 .nav-menu {
     display: flex;
     list-style: none;
