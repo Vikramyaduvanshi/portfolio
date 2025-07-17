@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const data = {
             name: formData.get('name'),
             email: formData.get('email'),
-            message: formData.get('message')
+            description: formData.get('message')
         };
 
         // Show loading state
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         try {
             // Send email using your backend API
-            const response = await fetch('/api/contact', {
+            const response = await fetch('https://portfolio-email-sender-xf1x.onrender.com/sendemail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
