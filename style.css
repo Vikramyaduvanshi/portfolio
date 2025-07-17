@@ -126,9 +126,10 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 0 20px;
+    padding: 100px 20px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     position: relative;
     overflow: hidden;
@@ -148,7 +149,31 @@ body {
 .hero-container {
     position: relative;
     z-index: 2;
-    max-width: 800px;
+    /* max-width: 800px; */
+    width: 100%;
+}
+#home .myimage img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover; /* Optional: makes image fill without distortion */
+  border-radius: 10px; /* Optional: for rounded corners */
+}
+
+/* ✅ Tablet (768px and below) */
+@media (max-width: 768px) {
+  #home .myimage img {
+    height: 160px;
+    width: 160px;
+  }
+  
+}
+
+/* ✅ Mobile (480px and below) */
+@media (max-width: 480px) {
+  #home .myimage img {
+    height: 140px;
+    width: 140px;
+  }
 }
 
 .hero-title {
